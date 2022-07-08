@@ -39,9 +39,16 @@ function addTodo(event){
     todoList.appendChild(todoDiv)
 
     //Clear todo-input value
-    todoInput.value = " ";
+    todoInput.value = "";
 }
 
 function deleteCheck(e){
-    console.log(e.target);
+    const item = e.target;
+    console.log(e.target)
+    //Delete the ToDo
+    if (item.classList[0] === "trash-button"){
+         const todo = item.parenElement;  
+         todo.remove();    
+    }
+
 }
