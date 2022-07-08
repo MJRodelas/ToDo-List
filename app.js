@@ -36,4 +36,7 @@ function addTodo(event){
     
     //Append To List
     todoList.appendChild(todoDiv)
+
+    //Clear todo-input value
+    todoInput.value = " ";
 }
