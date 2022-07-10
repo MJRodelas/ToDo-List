@@ -101,3 +101,12 @@ form button:hover{
     transform: translate(8rem) rotate(20deg);
     opacity: 0;
 }
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
